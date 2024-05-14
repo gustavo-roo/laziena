@@ -572,6 +572,12 @@ h4 span {
   }
 }
 
+@media (max-width: 767px) {
+  .contact-info {
+    margin-bottom: 15px; /* Adds some spacing on smaller screens */
+  }
+}
+
 @media (min-width: 992px) {
   .slick-slideshow .slick-dots {
     max-width: 960px;
@@ -955,7 +961,8 @@ button:focus:not(:focus-visible) {
 -----------------------------------------*/
 .contact-info {
   padding: 40px;
-  display: flex;
+  display: block;
+  word-wrap: break-word;
   flex-direction: column;
   justify-content: space-between;
 }
